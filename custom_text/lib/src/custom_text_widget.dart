@@ -19,11 +19,8 @@ class CustomText extends StatelessWidget {
               (e) => TextSpan(
                 text: e.text,
                 style: TextStyle(
-                    fontWeight: e.isBold ? FontWeight.bold : FontWeight.normal,
-                    fontStyle: e.isBold ? FontStyle.italic : FontStyle.normal,
-                    decoration: e.isBold
-                        ? TextDecoration.underline
-                        : TextDecoration.none),
+                  fontWeight: e.isBold ? FontWeight.bold : FontWeight.normal,
+                ),
               ),
             )
             .toList()));
